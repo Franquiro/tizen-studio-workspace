@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no">
+	<title>Circular UI</title>
+	<link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+	<link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="cargarMonedas()">
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Crypto Price</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview" id="main_menu">
+				<li id="menuSettings"><a onclick="tau.changePage('#settings');">Settings</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Second Screen -->
+	<div class="ui-page" id="second">
+		<header class="ui-header">
+			<h2 class="ui-title" id="title" onclick="actualizar()">Bch</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<div class="lower" style='margin:auto;'>
+  		<p class=content_coin_text id="content-local">Loading Data</p>
+  		<p class=content_coin_text id="content-uss">Please</p>
+  		<p class=content_coin_text id="content-btc">Wait</p>
+  	</div>
+		</div>
+	</div>
+	
+	<!-- Settings screen -->
+	<div class="ui-page" id="settings">
+		<header class="ui-header">
+			<h2 class="ui-title">Settings</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				<li><a onclick="tau.changePage('#coinselect')">Select Coins</a></li>
+				<li><a onclick="tau.changePage('#currselect')">Select Currency</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Coin Select Screen -->
+	<div class="ui-page" id="coinselect">
+		<header class="ui-header">
+			<h2 class="ui-title">Select Coins</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				<li><div class="swLabel"><label for="checkbox-btc">BTC - Bitcoin</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-BTC" id="checkbox-BTC" onclick="changePreference('BTC')" /></div></li>
+				<li><div class="swLabel"><label for="checkbox-bch">BCH - Bitcoin Cash</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-bch" id="checkbox-BCH" onclick="changePreference('BCH')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-eth">ETH - Ethereum</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-ETH" id="checkbox-ETH" onclick="changePreference('ETH')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-xrp">XRP - Ripple</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-xrp" id="checkbox-XRP" onclick="changePreference('XRP')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-EOS">EOS - EOS</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-EOS" id="checkbox-EOS" onclick="changePreference('EOS')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-LTC">LTC - LiteCoin</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-LTC" id="checkbox-LTC" onclick="changePreference('LTC')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-ICX">ICX - Icon Project</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-ICX" id="checkbox-ICX" onclick="changePreference('ICX')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-TRX">TRX - Tronix</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-TRX" id="checkbox-TRX" onclick="changePreference('TRX')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-ETC">ETC - Ethereum Classic</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-ETC" id="checkbox-ETC" onclick="changePreference('ETC')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-NEO">NEO - Neo</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-NEO" id="checkbox-NEO" onclick="changePreference('NEO')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-XMR">XMR - Monero</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-XMR" id="checkbox-XMR" onclick="changePreference('XMR')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-IOT">IOT - Iota</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-IOT" id="checkbox-IOT" onclick="changePreference('IOT')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-ZEC">ZEC - Zcash</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-ZEC" id="checkbox-ZEC" onclick="changePreference('ZEC')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-DOGE">DOGE - Dogecoin</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-DOGE" id="checkbox-DOGE" onclick="changePreference('DOGE')"/></div></li>
+				<li><div class="swLabel"><label for="checkbox-DASH">DASH - DigitalCash</label></div>
+					<div class="swInput"><input type="checkbox" name="checkbox-DASH" id="checkbox-DASH" onclick="changePreference('DASH')"/></div></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Currency Select Screen -->
+	<div class="ui-page" id="currselect">
+		<header class="ui-header">
+			<h2 class="ui-title">Select Currency</h2>
+		</header>
+		<div class="ui-content content-padding">
+			<ul class="ui-listview">
+				
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+	<script type="text/javascript" src="circle-helper.js"></script>
+	<script src="app.js"></script>
+	<script src="lowBatteryCheck.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+    background-color:#222;
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:320px;
+}
+
+.content-padding {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.content_text {
+	font-weight:bold;
+	font-size:5em;
+	color:#fff;
+}
+.precio{
+	font-size:0.5em;
+}
+
+
+#second {
+    margin: 0px auto;
+    background-color:#288db5;
+}
+
+
+.content_coin_text {
+	font-weight:bold;
+	font-size:1em;
+	color:#fff;
+	text-align:center;
+	
+}
+#title{
+	color:#FFA600;
+	background-color:#333;
+	width:100%;
+	margin-left:0;
+	font-size:1.5em;
+	font-weight:lighter;
+	padding-bottom:3%;
+}
+
+.ui-listview li{
+	padding:0;
+	min-height:2px;
+}
+
+
+
+.swLabel{
+	font-size:0.8em;
+	text-align:left;
+}
+
+.ui-listview li input[type="checkbox"]:not(.ui-switch-input), 
+.ui-listview li input[type="radio"]
+{
+   position: absolute;
+   right: 30px;
+   top: 0px;
+   max-width:60px;
+   max-height:60px;
+}/*

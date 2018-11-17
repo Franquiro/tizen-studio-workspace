@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Rotary Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="page-main" class="page">
+            <div class="content-main">
+                <div id="box-hand-hour"><div id="hand-hour"></div></div>
+                <div id="box-hand-minute"><div id="hand-minute"></div></div>
+                <div id="box-hand-second"><div id="hand-second"></div></div>
+                <div id="box-main-time">
+                    <div class="text-time-thin text-time-bold" id="text-main-hour">00</div>
+                    <div class="text-time-colon">:</div>
+                    <div class="text-time-thin" id="text-main-minute">00</div>
+                    <div class="text-time-colon">:</div>
+                    <div class="text-time-thin" id="text-main-second">00</div>
+                </div>
+                <div id="btn-reset"></div>
+                <div class="btn-footer" id="btn-start"></div>
+            </div>
+        </div>
+        <div id="page-run" class="page">
+            <div class="content-run">
+                <div id="box-progress">
+                    <div id="bg-progress"></div>
+                    <div id="dot-progress"></div>
+                </div>
+                <div id="box-label">
+                    <div class="text-label">HR</div>
+                    <div class="text-label">MIN</div>
+                    <div class="text-label">SEC</div>
+                </div>
+                <div id="box-run-time">
+                    <div class="text-time-bold" id="text-run-hour">00</div>
+                    <div class="text-time-colon">:</div>
+                    <div class="text-time-bold" id="text-run-minute">00</div>
+                    <div class="text-time-colon">:</div>
+                    <div class="text-time-bold" id="text-run-second">00</div>
+                </div>
+                <div id="btn-settime"></div>
+                <div class="btn-footer" id="btn-stop"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/page.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.content-main {
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/board_setup_hour_bg.png");
+}
+
+#btn-reset {
+    background-image: url("../image/button_reset.png");
+    position: absolute;
+    left: 122px;
+    top: 93px;
+    width: 115px;
+    height: 38px;
+}
+
+#box-main-time {
+    position: absolute;
+    left: 69px;
+    top: 149px;
+    width: 226px;
+    height: 78px;
+}
+
+.text-time-thin {
+    font-size: 43.2px;
+    line-height: 78px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+.text-time-bold {
+    font-size: 50.4px;
+    font-weight: bold;
+    line-height: 78px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+.text-time-colon {
+    width: 8px;
+    font-size: 28.8px;
+    line-height: 78px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+
+#text-main-hour,
+#text-main-minute,
+#text-main-second {
+    width: 70px;
+}
+
+#box-hand-hour {
+    position: absolute;
+    left: 164px;
+    top: 26px;
+    width: 32px;
+    height: 307px;
+}
+
+#box-hand-minute {
+    position: absolute;
+    left: 167px;
+    top: 30px;
+    width: 26px;
+    height: 300px;
+}
+
+#box-hand-second {
+    position: absolute;
+    left: 170px;
+    top: 33px;
+    width: 20px;
+    height: 293px;
+}
+
+#hand-hour {
+    width: 32px;
+    height: 37px;
+    background-color: rgba(178, 179, 179, 1);
+    background-size: contain;
+    -webkit-mask-image: url("../image/indicator_setter_hour.png");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#hand-minute {
+    width: 26px;
+    height: 30px;
+    background-color: rgba(60, 219, 192, 1);
+    background-size: contain;
+    -webkit-mask-image: url("../image/indicator_setter_minute.png");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#hand-second {
+    width: 20px;
+    height: 23px;
+    background-color: rgba(219, 144, 0, 1);
+    background-size: contain;
+    -webkit-mask-image: url("../image/indicator_setter_second.png");
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+#bg-progress {
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    width: 302px;
+    height: 302px;
+    background-image: url("../image/indicator_runner_progress.png");
+}
+
+#bg-progress {
+    position: absolute;
+    top: 29px;
+    left: 29px;
+    width: 302px;
+    height: 302px;
+    background-image: url("../image/indicator_runner_progress.png");
+}
+
+#dot-progress {
+    position: absolute;
+    top: 25px;
+    left: 168px;
+    width: 23px;
+    height: 310px;
+    background-image: url("../image/indicator_runner_dot.png");
+    background-repeat: no-repeat;
+    transform: rotate(125deg);
+}
+
+.content-run {
+    width: 100%;
+    height: 100%;
+    background-image: url("../image/board_run_bg.png");
+}
+
+#btn-settime {
+    background-image: url("../image/button_set_time.png");
+    position: absolute;
+    left: 122px;
+    top: 68px;
+    width: 115px;
+    height: 38px;
+}
+
+#box-label {
+    position: absolute;
+    left: 57px;
+    top: 133px;
+    height: 30px;
+}
+
+.text-label {
+    width: 58px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+    margin-right: 36px;
+}
+
+#box-run-time {
+    position: absolute;
+    left: 41px;
+    top: 162px;
+    width: 277px;
+    height: 78px;
+}
+
+#text-run-hour,
+#text-run-minute,
+#text-run-second {
+    width: 87px;
+}
+
+.btn-footer {
+    position: absolute;
+    left: 77px;
+    top: 282px;
+    width: 206px;
+    height: 78px;
+}
+
+#btn-start {
+    background-image: url("../image/button_start.png");
+}
+
+#btn-stop {
+    background-image: url("../image/button_stop.png");
+}
