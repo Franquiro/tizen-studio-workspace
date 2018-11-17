@@ -8,7 +8,7 @@
 </Reference>
 <Reference URI="app.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>JnIIiMNo7ohYIOnhaDskv66t3RQ9h0K6WSsKRL7zgMQ=</DigestValue>
+<DigestValue>BHhSEIUvqLosxoI7GxqdXXoT6QvuAJ4ZHHhdgK8x7hI=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -1047,9 +1047,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-O/m1v5aPcSDr9k6J0LsETZcgSoElY8vWZ2gkQcnSKYqx5TcO7g+9k71jKMe2Ff2R9OGj3xwj56Yb
-DCzY5R+3snatisDRM/O9H/DHqHj15cR4A5INfmTfXIiTRfVHVANkPcN2MGx5xYgyLTXphtLn7ZYr
-f4QfDM3jMaVvMN4qfn8=
+s//7wCZsTIwKIj9PrSJ26AWbkB40U2uPakuoSjY6uKY/W74ZwxM/CqCYfcw97fyIFthKwQ1QtvYe
+GlOmRYQdadYJxDn7mHXRJaQqUjNAKTM9OnM4eeRC2LMdwLcT1oTv7YRUbfeB0bjPkZTK6j89rBUR
+ohTzQEAIRbSKPV2UJOc=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

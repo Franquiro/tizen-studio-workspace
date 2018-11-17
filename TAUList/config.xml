@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/TAUList" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="qkZY9uK8eb.TAUList" package="qkZY9uK8eb" required_version="2.3.2"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png"/>
+    <name>TAUList</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting hwkey-event="enable"/>
+</widget>

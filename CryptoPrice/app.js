@@ -50,8 +50,7 @@ var successCB = function(preferences) {
     lista.appendChild(settings);
     }
 };
-var errCB = function(){console.log("error");
-tizen.preference.getAll(successCB,function(){});};
+var errCB = function(){console.log("errorCB");cambiarPagina('BTC');};
 
 function cargarMonedas(){
 tizen.preference.getAll(successCB,errCB);
